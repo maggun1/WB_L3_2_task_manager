@@ -3,7 +3,6 @@ mod logger;
 use inotify::{Inotify, WatchMask};
 use std::path::PathBuf;
 
-#[tokio::main]
 async fn main() {
     tracing_subscriber::fmt::init();
     tracing::info!("Task Logger started");
